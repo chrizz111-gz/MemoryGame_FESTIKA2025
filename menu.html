@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kertu Ngelajah Budaya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <!-- JUDUL GAMBAR (3 BAGIAN) -->
+        <div class="title-wrapper">
+            <img src="assets/kertu.png" class="title-img">
+            <img src="assets/ngelajah.png" class="title-img">
+            <img src="assets/budaya.png" class="title-img">
+        </div>
+
+        <!-- START GAME BUTTON -->
+        <button class="start-btn" id="startGameBtn" disabled>Start Game</button>
+
+
+        <!-- BOX PILIH LEVEL -->
+        <div class="level-box">
+            <h3>Pilih Level</h3>
+
+            <button class="level-btn easy" data-level="easy">Easy (4x4)</button>
+            <button class="level-btn medium" data-level="medium">Medium (4x6)</button>
+            <button class="level-btn hard" data-level="hard">Hard (4x8)</button>
+
+        </div>
+
+        <script src="menu.js"></script>
+
+    </div>
+
+</body>
+</html>

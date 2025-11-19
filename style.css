@@ -1,0 +1,113 @@
+/* GLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-image: url("./assets/background.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 40px;
+}
+
+/* agar semuanya berada di tengah */
+.wrapper {
+    text-align: center;
+}
+
+/* judul */
+.title-wrapper {
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+/* untuk mengatur ukuran judul gambar */
+.title-img {
+    width: 200px;       
+    height: auto;
+}
+
+/* start button */
+.start-btn {
+    background: #7f6b53;
+    padding: 10px 40px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 60px;
+
+    border: none;        /* hilangkan border hitam */
+    outline: none;       /* hilangkan outline saat klik */
+    border-radius: 999px; /* bentuk oval/pill */
+    cursor: pointer;     /* pointer agar terlihat tombol */
+}
+
+
+.start-btn:hover {
+    transform: translateY(-2px);
+    background: #836a4c;
+}
+
+/* box untuk */
+.level-box {
+    background: #4A4728;
+    padding: 25px 35px;
+    border-radius: 20px;
+    width: 300px;
+    margin: auto;
+}
+
+.level-box h3 {
+    color: #F5F5F5;
+    font-size: 20px;
+    margin-bottom: 18px;
+}
+
+/* tombol level */
+.level-btn {
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+    border: none;
+    border-radius: 8px;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+/* Warna tombol */
+.easy {
+    background: #5EB25E;
+}
+
+.medium {
+    background: #E7A23A;
+}
+
+.hard {
+    background: #C33C27;
+}
+
+/* Hover efek semua tombol */
+.level-btn:hover {
+    transform: translateY(-2px);
+}
+
+.level-btn.selected {
+    outline: 3px solid #fff;
+    filter: brightness(1.15);
+}
+.start-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
