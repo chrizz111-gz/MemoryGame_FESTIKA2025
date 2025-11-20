@@ -13,7 +13,7 @@
     <!-- TOPBAR -->
     <header class="topbar">
         <h1 class="title">Memory Game</h1>
-        <button class="btn-exit" id="btnExit">Keluar</button>
+        <button class="btn-exit" id="btnExit" onclick="location.href='menu.html'">Keluar</button>
     </header>
 
     <!-- INFORMASI GAME -->
@@ -33,6 +33,19 @@
     <main class="game-board" id="gameBoard">
         <!-- Kartu akan dibuat lewat JavaScript -->
     </main>
+
+    <!-- POPUP MENANG -->
+<div id="win-popup" class="popup hidden">
+    <div class="popup-box">
+        <h2>🎉 Kamu Menang!</h2>
+        <p id="win-moves"></p>
+        <p id="win-time"></p>
+
+        <button class="popup-btn" onclick="location.href='menu.html'">
+            Kembali ke Menu
+        </button>
+    </div>
+</div>
 
     <!-- SCRIPT -->
     <script src="game.js"></script>

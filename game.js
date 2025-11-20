@@ -118,31 +118,9 @@ function resetPick() {
 function showWinPopup() {
     clearInterval(timerInterval);
 
-    const time = document.getElementById("timer").textContent;
+    document.getElementById("win-moves").textContent = "Langkah: " + moves;
+    document.getElementById("win-time").textContent = "Waktu: " + document.getElementById("timer").textContent;
 
-    const popup = document.createElement("div");
-    popup.style.position = "fixed";
-    popup.style.inset = "0";
-    popup.style.background = "rgba(0,0,0,0.6)";
-    popup.style.display = "flex";
-    popup.style.justifyContent = "center";
-    popup.style.alignItems = "center";
-    popup.innerHTML = `
-        <div style="
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            text-align: center;
-            max-width: 300px;
-        ">
-            <h2>🎉 Kamu Menang!</h2>
-            <p>Langkah: ${moves}</p>
-            <p>Waktu: ${time}</p>
-            <button onclick="location.href='index.html'" 
-                style="padding:10px 20px;font-size:16px;border:none;border-radius:10px;background:#516B30;color:white;cursor:pointer;">
-                Kembali ke Menu
-            </button>
-        </div>
-    `;
-    document.body.appendChild(popup);
+    document.getElementById("win-popup").classList.remove("hidden");
 }
+

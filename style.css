@@ -7,7 +7,7 @@
 }
 
 body {
-    background-image: url("./assets/bckgrnd.jpeg");
+    background-image: url("./assets/bcg.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -88,14 +88,17 @@ body {
 /* Warna tombol */
 .easy {
     background: #5EB25E;
+    font-size: 20px;
 }
 
 .medium {
     background: #E7A23A;
+    font-size: 20px;
 }
 
 .hard {
     background: #C33C27;
+    font-size: 20px;
 }
 
 /* Hover efek semua tombol */

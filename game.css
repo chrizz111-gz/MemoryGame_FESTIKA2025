@@ -25,7 +25,7 @@ body {
 /* KARTU */
 .card {
     width: 100%;
-    padding-top: 100%; 
+    padding-top: 130%; 
     background: #F8E0A0;      /* warna kartu krem muda */
     border-radius: 12px;
     position: relative;
@@ -96,4 +96,93 @@ body {
     transform: rotateY(180deg);
     background-size: cover;
     background-position: center;
+}
+
+/* TOPBAR */
+.topbar {
+    background: #516B30;
+    color: #fff;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Judul */
+.topbar .title {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+/* Tombol keluar */
+.btn-exit {
+    background: #C33C27;
+    color: #fff;
+    font-size: 16px;
+    padding: 8px 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .2s;
+}
+.btn-exit:hover {
+    background: #a93222;
+    transform: translateY(-2px);
+}
+
+
+/* INFO GAME (Langkah & Waktu) */
+.game-info {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 15px;
+}
+
+.info-item {
+    background: #F0C96C;
+    padding: 12px 25px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+/* angka langkah & waktu */
+.info-item span:last-child {
+    color: #516B30;
+    margin-left: 6px;
+}
+
+.popup {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.popup.hidden {
+    display: none;
+}
+
+.popup-box {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 300px;
+    width: 90%;
+}
+
+.popup-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    background: #516B30;
+    color: white;
+    cursor: pointer;
 }
