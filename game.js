@@ -54,7 +54,6 @@ cards.forEach((imgSrc) => {
     // belakang kartu (tanda ?)
     const back = document.createElement("div");
     back.classList.add("card-back");
-    back.textContent = "?";
 
     // depan kartu (gambar)
     const front = document.createElement("div");

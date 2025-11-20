@@ -84,7 +84,10 @@ body {
 
 /* belakang kartu (yang terlihat saat tertutup) */
 .card-back {
-    background: #F8E0A0;
+    background-image: url("assets/btkbcg.jpeg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
