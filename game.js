@@ -51,7 +51,7 @@ cards.forEach((imgSrc) => {
     const card = document.createElement("div");
     card.classList.add("card");
 
-    // belakang kartu (tanda ?)
+    // belakang kartu
     const back = document.createElement("div");
     back.classList.add("card-back");
 

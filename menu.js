@@ -21,7 +21,7 @@ levelButtons.forEach(btn => {
     });
 });
 
-// EVENT: Klik tombol Start Game
+// Klik tombol Start Game
 startButton.addEventListener("click", () => {
     if (selectedLevel) {
         window.location.href = "game.html?level=" + selectedLevel;

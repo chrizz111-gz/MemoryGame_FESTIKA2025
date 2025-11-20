@@ -82,7 +82,7 @@ body {
     border-radius: 12px;
 }
 
-/* belakang kartu (yang terlihat saat tertutup) */
+/* belakang kartu (yang saat tertutup) */
 .card-back {
     background-image: url("assets/btkbcg.jpeg");
     background-size: cover;
